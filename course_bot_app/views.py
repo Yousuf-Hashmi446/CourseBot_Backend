@@ -15,6 +15,7 @@ class RegisterView(generics.CreateAPIView):
 
 
 class LoginView(APIView):
+    print('here')
     serializer_class = LoginSerializer
 
     def post(self, request, *args, **kwargs):
